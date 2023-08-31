@@ -8,21 +8,10 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
-function SalesNav() {
-  return (
-    <>
-      <Link to="/sales">Overview</Link> {">"}
-      <Link to="/sales/invoices">Invoices</Link> {">"}
-      <Link to="/sales/customers">Customers</Link>
-    </>
-  )
-}
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Sales Page</h1>
-      <SalesNav />
-      <Outlet />
+      <h2>Customers</h2>
     </div>
   );
 }
